@@ -21,6 +21,12 @@ Currently this template does not handle renaming the string
 `my-package` into your actual package name in all the files, this
 needs to be done manually.
 
+```bash
+# rename opam file, edit description, links, etc.
+# replace occurrences of my-package by your package name
+# edit files ...
+```
+
 ### Sanity checks
 
 You can check the validity of your opam file:
@@ -29,7 +35,7 @@ You can check the validity of your opam file:
 opam lint
 ```
 
-You can test the various target of the Makefile
+You can test the various targets of the Makefile
 
 ```bash
 make all
@@ -46,7 +52,7 @@ opam pin .
 opam install .
 ```
 
-More generally, refer to [opam [packaging
+More generally, refer to [opam packaging
 documentation](https://opam.ocaml.org/doc/Packaging.html).
 
 This should be enough to get going from there.
