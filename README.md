@@ -35,7 +35,7 @@ You can check the validity of your opam file:
 opam lint
 ```
 
-You can test the various targets of the Makefile
+You can test the various targets of the Makefile:
 
 ```bash
 make all
@@ -44,8 +44,8 @@ make fmt
 make clean
 ```
 
-Make sure to commit everything, then you check that the installation
-works as intended:
+Make sure to commit everything, then you may check that the
+installation works as intended:
 
 ```bash
 opam pin .
