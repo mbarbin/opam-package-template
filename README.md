@@ -1,5 +1,7 @@
 # opam package template
 
+![example workflow](https://github.com/mbarbin/opam-package-template/actions/workflows/main.yml/badge.svg)
+
 This is a project template for creating a new opam package repository. It lives at https://github.com/mbarbin/opam-package-template.
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
