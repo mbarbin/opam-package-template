@@ -11,12 +11,11 @@ doc: "https://github.com/mbarbin/my-package"
 bug-reports: "https://github.com/mbarbin/my-package/issues"
 depends: [
   "ocaml" {>= "4.09.0"}
-  "base"
-  "core_kernel" {with-test}
+  "base" {>= "v0.14"}
+  "core_kernel" {>= "v0.14" with-test}
   "dune" {>= "2.0.0"}
-  "ppx_jane" {with-test}
-  "ppx_sexp_value"
-
+  "ppx_jane" {>= "v0.14" with-test}
+  "ppx_sexp_value" {>= "v0.14"}
 ]
 build: [
   ["dune" "subst"] {pinned}
