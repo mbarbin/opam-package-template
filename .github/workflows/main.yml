@@ -29,20 +29,24 @@ jobs:
             janestreet-bleeding: https://ocaml.janestreet.com/opam-repository
             janestreet-bleeding-external: https://github.com/janestreet/opam-repository.git#external-packages
 
-      - run: opam pin my-package.dev . --no-action
+      - name: Install dependencies 
+        run: |
+          opam pin my-package.dev . --no-action
+          opam depext my-package --yes --with-doc --with-test
+          opam install . --deps-only --with-doc --with-test
 
-      - run: opam depext my-package --yes --with-doc --with-test
+      - name: Build
+        run: opam exec -- dune build
 
-      - run: opam install . --deps-only --with-doc --with-test
+      - name: Run tests
+        run: opam exec -- dune runtest
 
-      - run: opam exec -- dune build
+      - name: Run opam-dune-lint
+        run: |
+          opam depext opam-dune-lint --install
+          opam exec -- opam-dune-lint
 
-      - run: opam exec -- dune runtest
-
-      - run: opam depext opam-dune-lint --install
-
-      - run: opam exec -- opam-dune-lint
-
-      - run: opam depext ocamlformat=$(grep 'version' .ocamlformat | awk -F '=' '{ print $2 }') --install
-
-      - run: opam exec -- dune build @fmt
+      - name: Ocamlformat and dune @fmt
+        run: |
+          opam depext ocamlformat=$(grep 'version' .ocamlformat | awk -F '=' '{ print $2 }') --install
+          opam exec -- dune build @fmt
