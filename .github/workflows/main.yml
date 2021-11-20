@@ -29,7 +29,7 @@ jobs:
             janestreet-bleeding: https://ocaml.janestreet.com/opam-repository
             janestreet-bleeding-external: https://github.com/janestreet/opam-repository.git#external-packages
 
-      - name: Install dependencies 
+      - name: Install dependencies
         run: |
           opam pin my-package.dev . --no-action
           opam depext my-package --yes --with-doc --with-test
