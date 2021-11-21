@@ -33,17 +33,11 @@ package_module_name="${package_lib_name^}"
 # 1. Rename files
 
 mv_cmd1="mv ${package_public_name__template}.opam ${package_public_name}.opam"
-mv_cmd2="mv src/${package_lib_name__template}.mli src/${package_lib_name}.mli"
-mv_cmd3="mv src/${package_lib_name__template}.ml src/${package_lib_name}.ml"
 
 if [ -d ".git" ]; then
     git $mv_cmd1 || true
-    git $mv_cmd2 || true
-    git $mv_cmd3 || true
 else
     $mv_cmd1 || true
-    $mv_cmd2 || true
-    $mv_cmd3 || true
 fi
 
 # 2. Rename occurrences of string in files
