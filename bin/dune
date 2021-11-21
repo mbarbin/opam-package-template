@@ -1,0 +1,6 @@
+(executable
+ (name main)
+ (public_name main)
+ (package my-package)
+ (flags -warn-error +a)
+ (libraries core_kernel.core my-package))
