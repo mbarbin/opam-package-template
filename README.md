@@ -50,15 +50,33 @@ This options merely creates the contents of the repository on your machine.
 cd my-package
 ```
 
-Currently this template does not handle renaming the string
-`my-package` into your actual package name in all the files, this
-needs to be done manually.
+### Edit script/find-and-replace.sh
+
+There is a script to handle the renaming of a few variable that will
+depend on your project name and setting.
+
+This script is located at `./script/find-and-replace.sh`.
+
+Open it with your editor, look for the editable section, and set the
+variables below to the actual desired values:
+
+```
+package_public_name='my-package-name'
+package_lib_name='my_package_name'
+username='Fistname Lastname'
+github_username='my-githubusername'
+```
+
+Save the file, then execute it from the root of the repo:
 
 ```bash
-# rename opam file, edit description, links, etc.
-# replace occurrences of my-package by your package name
-# edit files ...
+./script/find-and-replace.sh
 ```
+
+### Synopsis, description and Lisence
+
+- Edit the opam synopsis and description for your project;
+- Choose and appropriate License for your project.
 
 ### Sanity checks
 
@@ -68,12 +86,13 @@ You can check the validity of your opam file:
 opam lint
 ```
 
-You can test the various targets of the Makefile:
+Test the various targets of the Makefile:
 
 ```bash
 make all
 make test
 make fmt
+make lint
 make clean
 ```
 
@@ -93,3 +112,4 @@ This should be enough to get going from there.
 ## Acknowledgements
 
 - This template was inspired by https://github.com/sveltejs/template.
+- The github workflow was created from examples found at https://github.com/ocaml/setup-ocaml.
