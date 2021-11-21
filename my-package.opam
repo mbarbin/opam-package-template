@@ -3,12 +3,12 @@ synopsis: "Add a short synopsis for my package"
 description: """\
 Add a longer description.
 With more details."""
-maintainer: "Mathieu Barbin"
-authors: "Mathieu Barbin"
+maintainer: "Your Username"
+authors: "Your Username"
 license: "MIT"
-homepage: "https://github.com/mbarbin/my-package"
-doc: "https://github.com/mbarbin/my-package"
-bug-reports: "https://github.com/mbarbin/my-package/issues"
+homepage: "https://github.com/githubuser123/my-package"
+doc: "https://github.com/githubuser123/my-package"
+bug-reports: "https://github.com/githubuser123/my-package/issues"
 depends: [
   "ocaml" {>= "4.09.0"}
   "base" {>= "v0.15~preview.125.13+424"}
@@ -22,4 +22,4 @@ build: [
   ["dune" "build" "-p" name "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
-dev-repo: "git+https://github.com/mbarbin/my-package.git"
+dev-repo: "git+https://github.com/githubuser123/my-package.git"
