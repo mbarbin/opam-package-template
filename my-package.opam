@@ -12,9 +12,9 @@ bug-reports: "https://github.com/githubuser123/my-package/issues"
 depends: [
   "ocaml" {>= "4.09.0"}
   "base" {>= "v0.15~preview.125.13+424"}
-  "core_kernel" {>= "v0.15~preview.125.13+424" with-test}
+  "core_kernel" {>= "v0.15~preview.125.13+424"}
   "dune" {>= "2.0.0"}
-  "ppx_jane" {>= "v0.15~preview.125.13+424" with-test}
+  "ppx_jane" {>= "v0.15~preview.125.13+424" & with-test}
   "ppx_sexp_value" {>= "v0.15~preview.125.13+424"}
 ]
 build: [
