@@ -42,6 +42,7 @@ jobs:
       - name: Run opam-dune-lint
         run: |
           opam install opam-dune-lint --yes
+          opam lint
           opam exec -- opam-dune-lint
 
       - name: Ocamlformat and dune @fmt

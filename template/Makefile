@@ -11,7 +11,7 @@ fmt:
 
 lint:
 	opam lint
-	opam-dune-lint
+	opam exec -- opam-dune-lint
 
 deps:
 	opam install . --deps-only --with-doc --with-test

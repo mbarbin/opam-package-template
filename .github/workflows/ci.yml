@@ -34,7 +34,7 @@ jobs:
             janestreet-bleeding-external: https://github.com/janestreet/opam-repository.git#external-packages
 
       - name: Install spin
-        run: opam install spin
+        run: opam install spin --yes
 
       - name: Install ocamlformat
         run: opam install ocamlformat=$(grep 'version' example/.ocamlformat | awk -F '=' '{ print $2 }') --yes
