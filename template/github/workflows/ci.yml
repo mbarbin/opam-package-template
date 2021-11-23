@@ -1,4 +1,4 @@
-{% raw -%}name: Main workflow
+{% raw -%}name: CI
 
 on:
   - pull_request
@@ -41,11 +41,11 @@ jobs:
 
       - name: Run opam-dune-lint
         run: |
-          opam depext opam-dune-lint --install
+          opam install opam-dune-lint --yes
           opam exec -- opam-dune-lint
 
       - name: Ocamlformat and dune @fmt
         run: |
-          opam depext ocamlformat=$(grep 'version' .ocamlformat | awk -F '=' '{ print $2 }') --install
+          opam install ocamlformat=$(grep 'version' .ocamlformat | awk -F '=' '{ print $2 }') --yes
           opam exec -- dune build @fmt
 {%- endraw %}

@@ -37,10 +37,10 @@ jobs:
         run: opam install spin
 
       - name: Install ocamlformat
-        run: opam depext ocamlformat=$(grep 'version' example/.ocamlformat | awk -F '=' '{ print $2 }') --install
+        run: opam install ocamlformat=$(grep 'version' example/.ocamlformat | awk -F '=' '{ print $2 }') --yes
 
       - name: Install opam-dune-lint
-        run: opam depext opam-dune-lint --install
+        run: opam install opam-dune-lint --yes
 
       - name: Check example directory
         working-directory: example

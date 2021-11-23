@@ -1,6 +1,6 @@
 # opam package template
 
-![CI](https://github.com/mbarbin/opam-package-template/actions/workflows/CI/badge.svg)
+[![Actions Status](https://github.com/mbarbin/opam-package-template/workflows/CI/badge.svg)](https://github.com/mbarbin/opam-package-template/actions)
 
 This is a project template for creating a new opam package repository.
 
@@ -50,13 +50,11 @@ After creating the project directory, you can:
 - [ ] Choose an appropriate License
 
 - [ ] Check the validity of the opam file:
-
 ```bash
 opam lint
 ```
 
 - [ ] Test the various targets of the Makefile:
-
 ```bash
 make all
 make test
@@ -66,7 +64,6 @@ make clean
 ```
 
 - [ ] Check that the installation works as intended:
-
 ```bash
 opam pin .
 opam install .

@@ -1,13 +1,13 @@
 .PHONY: all test fmt lint deps clean check-all
 
 all:
-	dune build
+	opam exec -- dune build
 
 test:
-	dune runtest
+	opam exec -- dune runtest
 
 fmt:
-	dune build @fmt --auto-promote
+	opam exec -- dune build @fmt --auto-promote
 
 lint:
 	opam lint
@@ -17,6 +17,6 @@ deps:
 	opam install . --deps-only --with-doc --with-test
 
 clean:
-	dune clean
+	opam exec -- dune clean
 
 check-all: deps all test clean lint # fmt ## currently fmt is broken
