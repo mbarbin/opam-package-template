@@ -1,3 +1,3 @@
 open! Core
 
-let () = print_s My_package.Hello.hello_world
+let () = print_s {{ project_snake | capitalize }}.Hello.hello_world

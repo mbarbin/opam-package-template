@@ -1,6 +1,6 @@
 (executable
  (name main)
  (public_name main)
- (package my-package)
+ (package {{ project_slug }})
  (flags -warn-error +a)
- (libraries core_kernel.core my-package))
+ (libraries core_kernel.core {{ project_slug }}))

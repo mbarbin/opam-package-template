@@ -1,4 +1,4 @@
-name: Main workflow
+{% raw -%}name: Main workflow
 
 on:
   - pull_request
@@ -30,9 +30,7 @@ jobs:
             janestreet-bleeding-external: https://github.com/janestreet/opam-repository.git#external-packages
 
       - name: Install dependencies
-        run: |
-          opam pin my-package.dev . --no-action
-          opam depext my-package --yes --with-doc --with-test
+        run:
           opam install . --deps-only --with-doc --with-test
 
       - name: Build
@@ -50,3 +48,4 @@ jobs:
         run: |
           opam depext ocamlformat=$(grep 'version' .ocamlformat | awk -F '=' '{ print $2 }') --install
           opam exec -- dune build @fmt
+{%- endraw %}

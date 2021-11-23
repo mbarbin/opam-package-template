@@ -1,6 +1,6 @@
 (library
- (name {{ project_snake }})
- (public_name  {{ project_slug }})
+ (name example)
+ (public_name example)
  (flags -warn-error +a)
  (libraries base)
  (preprocess

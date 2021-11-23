@@ -1,7 +1,7 @@
 (library
- (name my_package_test)
+ (name {{ project_snake }}_test)
  (flags -warn-error +a)
- (libraries core_kernel.core my-package)
+ (libraries core_kernel.core {{ project_slug }})
  (inline_tests)
  (preprocess
   (pps ppx_jane)))
