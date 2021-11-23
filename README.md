@@ -1,6 +1,6 @@
 # opam package template
 
-![example workflow](https://github.com/mbarbin/opam-package-template/actions/workflows/main.yml/badge.svg)
+![CI](https://github.com/mbarbin/opam-package-template/actions/workflows/CI/badge.svg)
 
 This is a project template for creating a new opam package repository.
 
@@ -77,5 +77,5 @@ More generally, refer to [opam packaging documentation](https://opam.ocaml.org/d
 ## Acknowledgements
 
 - This template is very close to (and heavily inspired by) [spin's bin template](https://github.com/tmattio/spin/tree/main/template/bin).
-- `example.sh` is based on [spin-dream](https://github.com/ocaml-templates/spin-dream).
-- The github workflow was created from examples found at [ocaml/setup-ocaml](https://github.com/ocaml/setup-ocaml).
+- `example.sh` and the CI script of the root repo is based on [spin-dream](https://github.com/ocaml-templates/spin-dream).
+- The github workflow of the template was created from examples found at [ocaml/setup-ocaml](https://github.com/ocaml/setup-ocaml).
