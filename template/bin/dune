@@ -3,4 +3,4 @@
  (public_name main)
  (package {{ project_slug }})
  (flags -warn-error +a)
- (libraries core_kernel.core {{ project_slug }}))
+ (libraries core {{ project_slug }}))

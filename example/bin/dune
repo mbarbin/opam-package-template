@@ -3,4 +3,4 @@
  (public_name main)
  (package example)
  (flags -warn-error +a)
- (libraries core_kernel.core example))
+ (libraries core example))

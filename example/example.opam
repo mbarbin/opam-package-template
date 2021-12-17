@@ -9,11 +9,11 @@ doc: "https://github.com/mbarbin/example"
 bug-reports: "https://github.com/mbarbin/example/issues"
 depends: [
   "ocaml" {>= "4.09.0"}
-  "base" {>= "v0.15~preview.125.13+424"}
-  "core_kernel" {>= "v0.15~preview.125.13+424"}
   "dune" {>= "2.0.0"}
-  "ppx_jane" {>= "v0.15~preview.125.13+424" & with-test}
-  "ppx_sexp_value" {>= "v0.15~preview.125.13+424"}
+  "base" {>= "v0.15~preview.125.15+452"}
+  "core" {>= "v0.15~preview.125.15+452"}
+  "ppx_jane" {>= "v0.15~preview.125.15+452" & with-test}
+  "ppx_sexp_value" {>= "v0.15~preview.125.15+452"}
 ]
 build: [
   ["dune" "subst"] {pinned}
