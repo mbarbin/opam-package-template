@@ -19,6 +19,10 @@ lint:
 deps:
 	opam install . --deps-only --with-doc --with-test
 
+.PHONY: doc
+doc:
+	opam exec -- dune build @doc
+
 .PHONY: clean
 clean:
 	opam exec -- dune clean
