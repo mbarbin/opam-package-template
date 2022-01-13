@@ -42,6 +42,9 @@ jobs:
       - name: Install opam-dune-lint
         run: opam install opam-dune-lint --yes
 
+      - name: Install odoc
+        run: opam install odoc --yes
+
       - name: Check example directory
         working-directory: example
         run: make check-all
