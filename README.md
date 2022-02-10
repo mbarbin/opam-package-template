@@ -7,7 +7,7 @@ This is a project template for creating a new opam package repository.
 ## Using the template
 
 ```bash
-opam spin new https://github.com/mbarbin/opam-package-repository.git my-package
+opam spin new https://github.com/mbarbin/opam-package-template.git my-package
 cd my-package
 ```
 
