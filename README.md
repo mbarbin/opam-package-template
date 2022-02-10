@@ -13,6 +13,10 @@ cd my-package
 
 You can see an example of generated project in the [`example/`](example/) directory.
 
+In order to see the template's github actions workflows being
+executed, the example generated project is also hosted as a separate
+repo [here](https://github.com/mbarbin/opam-package-template-example).
+
 ## Motivation and relationship to spin's default templates
 
 This template is meant for personal use only. If you landed on this
