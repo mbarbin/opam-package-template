@@ -8,12 +8,12 @@ homepage: "https://github.com/mbarbin/example"
 doc: "https://github.com/mbarbin/example"
 bug-reports: "https://github.com/mbarbin/example/issues"
 depends: [
-  "ocaml" {>= "4.09.0"}
+  "ocaml" {>= "4.12"}
   "dune" {>= "2.0.0"}
-  "base" {>= "v0.15~preview.126.09+332"}
-  "core" {>= "v0.15~preview.126.09+332"}
-  "ppx_jane" {>= "v0.15~preview.126.09+332" & with-test}
-  "ppx_sexp_value" {>= "v0.15~preview.126.09+332"}
+  "base" {>= "v0.15"}
+  "core" {>= "v0.15"}
+  "ppx_jane" {>= "v0.15" & with-test}
+  "ppx_sexp_value" {>= "v0.15"}
 ]
 build: [
   ["dune" "subst"] {pinned}
