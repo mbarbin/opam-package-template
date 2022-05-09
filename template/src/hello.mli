@@ -1,3 +1,3 @@
-open! Base
+open! Core
 
 val hello_world : Sexp.t

@@ -1,6 +1,6 @@
 (executable
  (name main)
- (public_name main)
+ (public_name example)
  (package example)
  (flags -warn-error +a)
  (libraries core example))

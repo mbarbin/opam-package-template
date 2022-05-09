@@ -10,10 +10,8 @@ bug-reports: "https://github.com/mbarbin/example/issues"
 depends: [
   "ocaml" {>= "4.13"}
   "dune" {>= "2.0.0"}
-  "base" {>= "v0.15"}
   "core" {>= "v0.15"}
-  "ppx_jane" {>= "v0.15" & with-test}
-  "ppx_sexp_value" {>= "v0.15"}
+  "ppx_jane" {>= "v0.15"}
 ]
 build: [
   ["dune" "subst"] {pinned}

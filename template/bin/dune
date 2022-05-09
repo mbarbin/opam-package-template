@@ -1,6 +1,6 @@
 (executable
  (name main)
- (public_name main)
+ (public_name {{ project_slug }})
  (package {{ project_slug }})
  (flags -warn-error +a)
  (libraries core {{ project_slug }}))
