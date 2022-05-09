@@ -1,3 +1,3 @@
 open! Core
 
-let () = print_s Example.Hello.hello_world
+let () = print_s Example.hello_world
