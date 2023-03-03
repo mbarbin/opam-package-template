@@ -39,9 +39,6 @@ jobs:
       - name: Install ocamlformat
         run: opam install ocamlformat=$(grep 'version' example/.ocamlformat | awk -F '=' '{ print $2 }') --yes
 
-      - name: Install opam-dune-lint
-        run: opam install opam-dune-lint --yes
-
       - name: Install odoc
         run: opam install odoc --yes
 
