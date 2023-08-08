@@ -47,7 +47,7 @@ jobs:
         run: make check-all
 
       - name: Generate template
-        run: opam exec -- spin new . _generated --default -vv
+        run: opam exec -- spin new . _generated --default --verbosity=debug
 
       - name: Check generated template
         working-directory: _generated
