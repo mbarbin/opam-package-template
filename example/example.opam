@@ -9,7 +9,7 @@ doc: "https://github.com/mbarbin/example"
 bug-reports: "https://github.com/mbarbin/example/issues"
 depends: [
   "ocaml" {>= "5.0"}
-  "dune" {>= "3.9"}
+  "dune" {>= "3.11"}
   "core" {>= "v0.16" & < "v0.17"}
   "core_unix" {>= "v0.16" & < "v0.17"}
   "ppx_jane" {>= "v0.16" & < "v0.17"}
