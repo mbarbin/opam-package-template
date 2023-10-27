@@ -1,3 +1,5 @@
 (lang dune 3.11)
+
 (name {{ project_snake }})
+
 (cram enable)
