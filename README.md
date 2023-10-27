@@ -1,6 +1,6 @@
 # opam package template
 
-[![Actions Status](https://github.com/mbarbin/opam-package-template/workflows/CI/badge.svg)](https://github.com/mbarbin/opam-package-template/actions)
+[![Actions Status](https://github.com/mbarbin/opam-package-template/workflows/ci/badge.svg)](https://github.com/mbarbin/opam-package-template/actions)
 
 This is a project template for creating a new opam package repository.
 
