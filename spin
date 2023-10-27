@@ -23,7 +23,8 @@
 ; We need to do this because Dune won't copy .github during build
 (post_gen
   (actions
-    (run mv github .github)))
+    ((run mv github .github)
+     (run mv vscode .vscode))))
 
 (example_commands
   (commands
