@@ -1,4 +1,5 @@
-open! Core
+open! Base
+open! Stdio
 
 let hello_world = [%sexp "Hello, World!"]
 
