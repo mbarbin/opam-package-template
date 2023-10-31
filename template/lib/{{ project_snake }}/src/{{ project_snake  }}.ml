@@ -1,6 +1,3 @@
-open! Base
-open! Stdio
-
 let hello_world = [%sexp "Hello, World!"]
 
 let print_cmd =
