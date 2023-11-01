@@ -5,7 +5,7 @@ maintainer: "Mathieu Barbin"
 authors: "Mathieu Barbin"
 license: "MIT"
 homepage: "https://github.com/mbarbin/example"
-doc: "https://github.com/mbarbin/example"
+doc: "https://mbarbin.github.io/example/"
 bug-reports: "https://github.com/mbarbin/example/issues"
 depends: [
   "ocaml" {>= "5.1"}
