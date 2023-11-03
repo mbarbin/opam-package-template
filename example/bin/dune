@@ -3,4 +3,4 @@
  (public_name example)
  (package example)
  (flags -w +a-4-40-41-42-44-66 -warn-error +a)
- (libraries core_unix.command_unix example))
+ (libraries command-unix-for-opam example))
