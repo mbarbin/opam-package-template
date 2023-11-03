@@ -1,3 +1,55 @@
 (lang dune 3.11)
 
 (name {{ project_snake }})
+
+(generate_opam_files)
+
+(license MIT)
+
+(authors "{{ author_name }}")
+
+(maintainers "{{ author_name }}")
+
+(source
+ (github {{ github_username }}/{{ project_snake }}))
+
+(documentation "https://{{ github_username }}.github.io/{{ project_snake }}/")
+
+(package
+ (name {{ project_snake }})
+ (synopsis "{{ project_description }}")
+ (description "{{ project_description }}")
+ (depends
+  (ocaml
+   (>= 5.1))
+  (dune
+   (>= 3.11))
+  (base
+   (and
+    (>= v0.16)
+    (< v0.17)))
+  (core
+   (and
+    (>= v0.16)
+    (< v0.17)))
+  (core_unix
+   (and
+    (>= v0.16)
+    (< v0.17)))
+  (expect_test_helpers_core
+   (and
+    :with-test
+    (>= v0.16)
+    (< v0.17)))
+  (ppx_jane
+   (and
+    (>= v0.16)
+    (< v0.17)))
+  (ppx_js_style
+   (and
+    (>= v0.16)
+    (< v0.17)))
+  (stdio
+   (and
+    (>= v0.16)
+    (< v0.17)))))
