@@ -8,6 +8,7 @@
 
 ### Changed
 
+- Use `command-unix-for-opam` to run core commands.
 - Now generating `opam`` file from `dune-project`.
 - Use a changelog format that works well with `dune-release`.
 - Open systematically the modules that constitute the default scope within a lib
