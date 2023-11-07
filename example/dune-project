@@ -13,8 +13,7 @@
 (source
  (github mbarbin/example))
 
-(documentation
- "https://mbarbin.github.io/example/")
+(documentation "https://mbarbin.github.io/example/")
 
 (package
  (name example)

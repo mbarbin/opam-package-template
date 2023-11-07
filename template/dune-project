@@ -1,6 +1,6 @@
 (lang dune 3.11)
 
-(name {{ project_snake }})
+(name {{ project_slug }})
 
 (generate_opam_files)
 
@@ -11,13 +11,12 @@
 (maintainers "{{ author_name }}")
 
 (source
- (github {{ github_username }}/{{ project_snake }}))
+ (github {{ github_username }}/{{ project_slug }}))
 
-(documentation
- "https://{{ github_username }}.github.io/{{ project_snake }}/")
+(documentation "https://{{ github_username }}.github.io/{{ project_slug }}/")
 
 (package
- (name {{ project_snake }})
+ (name {{ project_slug }})
  (synopsis "{{ project_description }}")
  (description "{{ project_description }}")
  (depends
