@@ -10,7 +10,7 @@ doc: "https://mbarbin.github.io/example/"
 bug-reports: "https://github.com/mbarbin/example/issues"
 depends: [
   "ocaml" {>= "5.1"}
-  "dune" {>= "3.11" & >= "3.11"}
+  "dune" {>= "3.12" & >= "3.12"}
   "base" {>= "v0.16" & < "v0.17"}
   "command-unix-for-opam" {>= "0.0.1"}
   "core" {>= "v0.16" & < "v0.17"}
