@@ -18,7 +18,6 @@
 (package
  (name example)
  (synopsis "A short, but powerful statement about your project")
- (description "A short, but powerful statement about your project")
  (depends
   (ocaml
    (>= 5.1))

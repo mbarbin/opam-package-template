@@ -18,7 +18,6 @@
 (package
  (name {{ project_slug }})
  (synopsis "{{ project_description }}")
- (description "{{ project_description }}")
  (depends
   (ocaml
    (>= 5.1))
