@@ -21,8 +21,6 @@
  (depends
   (ocaml
    (>= 5.1))
-  (dune
-   (>= 3.12))
   (base
    (and
     (>= v0.16)
