@@ -1,4 +1,4 @@
-(lang dune 3.13)
+(lang dune 3.14)
 
 (name example)
 
@@ -26,7 +26,7 @@
     (>= v0.16)
     (< v0.17)))
   (command-unix-for-opam
-   (>= 0.0.1))
+   (>= 0.0.2))
   (core
    (and
     (>= v0.16)
