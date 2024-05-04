@@ -8,7 +8,7 @@ homepage: "https://github.com/{{ github_username }}/{{ project_slug }}"
 doc: "https://{{ github_username }}.github.io/{{ project_slug }}/"
 bug-reports: "https://github.com/{{ github_username }}/{{ project_slug }}/issues"
 depends: [
-  "dune" {>= "3.14"}
+  "dune" {>= "3.15"}
   "ocaml" {>= "5.1"}
   "base" {>= "v0.16" & < "v0.17"}
   "command-unix-for-opam" {>= "0.0.2"}
