@@ -1,2 +1,2 @@
 val hello_world : Sexp.t
-val main : Command.t
+val main : unit Command.t

@@ -4,5 +4,4 @@
 
 ## Code documentation
 
-The code documentation of the latest release is built with `odoc` and published
-to `GitHub` pages [here](https://mbarbin.github.io/example).
+The code documentation of the latest release is built with `odoc` and published to `GitHub` pages [here](https://mbarbin.github.io/example).

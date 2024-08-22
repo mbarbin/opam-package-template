@@ -1,1 +1,1 @@
-let () = Command_unix_for_opam.run {{ project_snake | capitalize }}.main
+let () = Commandlang_to_cmdliner.run {{ project_snake | capitalize }}.main ~name:"{{ project_name }}" ~version:"%%VERSION%%"

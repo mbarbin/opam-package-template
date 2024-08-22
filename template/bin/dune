@@ -3,4 +3,4 @@
  (public_name {{ project_slug }})
  (package {{ project_slug }})
  (flags :standard -w +a-4-40-41-42-44-45-48-66 -warn-error +a)
- (libraries command-unix-for-opam {{ project_slug }}))
+ (libraries commandlang-to-cmdliner {{ project_slug }}))
