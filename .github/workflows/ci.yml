@@ -53,6 +53,10 @@ jobs:
       - name: Generate template
         run: opam exec -- spin new . _generated --default
 
+      - name: Auto-format generated template
+        working-directory: _generated
+        run: opam exec dune -- fmt || true
+
       - name: Check generated template
         working-directory: _generated
         run: make check-all
