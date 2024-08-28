@@ -1,5 +1,6 @@
 (library
  (name {{ project_snake }}_test)
+ (public_name {{ project_slug }}-tests.{{ project_snake }}_test)
  (flags
   :standard
   -w
@@ -9,8 +10,8 @@
   -open
   Base
   -open
-  Expect_test_helpers)
- (libraries base expect-test-helpers {{project_snake}})
+  Expect_test_helpers_base)
+ (libraries base expect_test_helpers_core.expect_test_helpers_base {{project_snake}})
  (inline_tests)
  (lint
   (pps ppx_js_style -check-doc-comments))
