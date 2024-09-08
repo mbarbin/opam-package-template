@@ -21,22 +21,18 @@
  (depends
   (ocaml
    (>= 5.2))
-  (ocamlformat
-   (and
-    :with-dev-setup
-    (= 0.26.2)))
   (base
    (and
     (>= v0.17)
     (< v0.18)))
+  (cmdlang
+   (>= 0.0.4))
+  (cmdlang-to-cmdliner
+   (>= 0.0.4))
   (cmdliner
    (= 1.3.0))
-  (commandlang
-   (>= 0.0.2))
-  (commandlang-to-cmdliner
-   (>= 0.0.2))
-  (err0
-   (>= 0.0.2))
+  (err
+   (>= 0.0.4))
   (ppx_compare
    (and
     (>= v0.17)
@@ -51,11 +47,6 @@
     (< v0.18)))
   (ppx_here
    (and
-    (>= v0.17)
-    (< v0.18)))
-  (ppx_js_style
-   (and
-    :with-dev-setup
     (>= v0.17)
     (< v0.18)))
   (ppx_let
@@ -91,14 +82,14 @@
    (and
     (>= v0.17)
     (< v0.18)))
+  (cmdlang
+   (>= 0.0.4))
+  (cmdlang-to-cmdliner
+   (>= 0.0.4))
   (cmdliner
    (= 1.3.0))
-  (commandlang
-   (>= 0.0.2))
-  (commandlang-to-cmdliner
-   (>= 0.0.2))
-  (err0
-   (>= 0.0.2))
+  (err
+   (>= 0.0.4))
   (expect_test_helpers_core
    (and
     (>= v0.17)
