@@ -1,1 +1,1 @@
-let () = Cmdlang_to_cmdliner.run Example.main ~name:"example" ~version:"%%VERSION%%"
+let () = Cmdlang_cmdliner_runner.run Example.main ~name:"example" ~version:"%%VERSION%%"
