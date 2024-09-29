@@ -76,6 +76,8 @@
  (depends
   (ocaml
    (>= 5.2))
+  ({{ project_slug }}
+   (= :version))
   (ocamlformat
    (and
     :with-dev-setup
