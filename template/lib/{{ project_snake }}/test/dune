@@ -11,7 +11,7 @@
   Base
   -open
   Expect_test_helpers_base)
- (libraries base expect_test_helpers_core.expect_test_helpers_base {{project_snake}})
+ (libraries base {{project_snake}} expect_test_helpers_core.expect_test_helpers_base)
  (inline_tests)
  (lint
   (pps ppx_js_style -check-doc-comments))
