@@ -14,7 +14,7 @@
  (libraries base example expect_test_helpers_core.expect_test_helpers_base)
  (inline_tests)
  (lint
-  (pps ppx_js_style -check-doc-comments))
+  (pps ppx_js_style -allow-let-operators -check-doc-comments))
  (preprocess
   (pps
    -unused-code-warnings=force
